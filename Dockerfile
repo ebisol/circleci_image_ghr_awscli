@@ -1,7 +1,7 @@
 FROM circleci/golang:1.9
 
 RUN go get github.com/tcnksm/ghr
-RUN sudo apt-get install -y dnsutils awscli expect 
+RUN sudo apt-get install -y dnsutils awscli expect redis-tools
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs npm
 RUN sudo npm install -g npm@3

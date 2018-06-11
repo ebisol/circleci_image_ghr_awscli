@@ -4,6 +4,7 @@ RUN go get github.com/tcnksm/ghr
 RUN sudo apt-get install -y dnsutils awscli expect redis-tools
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs npm
+RUN sudo apt-get install -y openjdk-8-jdk
 RUN sudo npm install -g npm@3
 RUN sudo apt-get install -y python3-pip
 RUN pip3 install -U setuptools tox

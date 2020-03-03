@@ -1,4 +1,4 @@
-FROM circleci/golang:1.12
+FROM circleci/golang:1.13
 
 RUN go get github.com/tcnksm/ghr
 RUN sudo apt-get install -y dnsutils awscli expect redis-tools
